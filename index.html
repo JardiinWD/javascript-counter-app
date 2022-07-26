@@ -7,10 +7,39 @@
     <title>Scaffolding iniziale</title>
     <!-- Link a foglio di style -->
     <link rel='stylesheet' href='./assets/css/style.css'>
+    <!-- Link a CDN Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
-    <h1>Hello World</h1>
+
+    <!-- /.container -->    
+    <div class="container">
+        <!-- /.counter-div -->        
+        <div class="counter-div">
+            <h1>Counter App</h1>
+            <!-- /.count -->            
+            <span class="count">0</span>
+            <hr>
+            <!-- Bottoni per Sottrarre, resettare e aggiungere -->            
+            <div class="buttons">
+                <!-- /.substract -->                
+                <button class="substract">
+                    <i class="fa-solid fa-arrow-down"></i>Substract
+                </button>
+                <!-- /.reset -->
+                <button class="reset">
+                    <i class="fa-solid fa-spinner"></i>Reset
+                </button>
+                <!-- /.add -->
+                <button class="add">
+                    <i class="fa-solid fa-arrow-up"></i>Add
+                </button>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Link a JS -->
     <script src='./assets/js/app.js'></script>

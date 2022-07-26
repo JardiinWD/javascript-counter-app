@@ -5,18 +5,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif; 
 }
 
 html {
     font-size: 10px;
 }
-
 p {
     font-size: 1.6rem;
     line-height: 1.5;
 }
-
 img {
     width: 100%;
 }
@@ -44,12 +42,69 @@ img {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 /*#endregion */
 
+/*#region Counter utilities */
+.counter-div {
+    width: 40rem;
+    border: 1px solid var(--grey);
+    padding: 1rem;
+    background-color: var(--light-blue);
+    color: var(--white);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.counter-div > * {
+    margin-bottom: 2rem;
+}
+
+/* Il mio numero */
+.count {
+    font-size: 4rem;
+}
+
+/*#region Buttons utilities */
+.buttons button {
+    padding: 1rem;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button.substract {
+    background-color: orangered;
+}
+
+button.reset {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+button.add {
+    background-color: green;
+}
+
+button.substract > i,
+button.reset > i,
+button.add > i {
+    padding-right: 7px;
+}
+/*#endregion Buttons utilities */
 
 
+/*#endregion */
 
 
 
